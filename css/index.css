@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css?family=Gabriela&subset=cyrillic');
+
+:root {
+    font-family: 'Gabriela', serif;
+}
+
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+header .header-logo {
+    margin-top: 20px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+header .header-logo div {
+    max-width: 720px;
+    display: flex;
+    justify-content: center;
+}
+
+header .header-logo p {
+    display: flex;
+    justify-content: center;
+}
+
+header .archeage-logo {
+    align-self: center;
+    width: 50px;
+}
+
+header .reversal-logo {
+    align-self: center;
+}
+
+header .menu {
+    padding: 0;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+}
+
+header .menu li {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+header .menu a {
+    text-decoration: none;
+    color: black;
+}
+
+header nav .menu a:hover {
+    text-decoration: underline;
+}
+
+#home-sector img {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home-sector p {
+    width: 90%;
+    margin: auto;
+}
+
+#home-sector ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+#home-sector li {
+    margin: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#news-sector div {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 40px 4fr 2fr 30px;
+}
+
+#news-sector div h3 {
+    margin: 5px 0px;
+}
+
+#news-sector div img {
+    width: 100%;
+    margin: 15px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#news-sector article {
+    margin-bottom: 5px;
+}
+
+#timetable-sector table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 600px) {
+    
+    #timetable-sector table td {
+        padding: 10px;
+    }
+}
+
+#contact-sector div {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-sector figure {
+    margin: 20px 20px 20px 20px;
+}
+
+#contact-sector div img {
+    width: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-sector div figcaption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#feedback-sector form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#feedback-sector form label {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#feedback-sector input {
+    width: 200px;
+}
+
+#feedback-sector textarea {
+    width: 260px;
+    height: 150px;
+}
+
+.btn {
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 16px;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    display: inline-block;
+    color: black;
+    border: 1px black solid;
+    background-color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 450px) {
+    
+    header .header-logo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    
+    header .menu {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 1fr;
+    }
+    
+    #news-sector div {
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 3fr 1fr;
+    }
+    
+    #news-sector img {
+        max-width: 300px;
+        margin: 0px;
+        grid-area: 1 / 1 / 4 / 2;
+        display: flex;
+        align-self: flex-start;
+    }
+    
+    #news-sector p {
+        margin-left: 20px;
+    }
+    
+    #news-sector label {
+        margin-left: 20px;
+    }
+    
+    #contact-sector div {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+    }
+    
+    #feedback-sector input {
+        width: 250px;
+    }
+
+    #feedback-sector textarea {
+        width: 350px;
+        height: 150px;
+    }
+}

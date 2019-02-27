@@ -1,31 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Reversal</title>
+    <title>ReversaL</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <header>
-        <div>
-            <figure>
-                <img src="img/archeage-logo.png" alt="ArcheAge logo" width="50">
-                <img src="img/reversal-logo.png" alt="Reversal guild logo">
-            </figure>
-            <label>сервер Лорея</label> 
+        <div class="header-logo">
+            <div>
+                <img src="img/archeage-logo.png" class="archeage-logo" alt="Логотип ArcheAge">
+                <img src="img/reversal-logo.png" class="reversal-logo" alt="Логотип гільдії ReversaL">
+            </div>
+            <p>сервер Лорея</p> 
         </div>
         <nav>
-            <a href="#home-sector">Головна</a>
-            <a href="#news-sector">Новини</a>
-            <a href="#timetable-sector">Розклад</a>
-            <a href="#contact-sector">Контакти</a>
-            <a href="#feedback-sector">Зворотній зв'язок</a>
+            <ul class="menu">
+                <li><a href="#home-sector">Головна</a></li>
+                <li><a href="#news-sector">Новини</a></li>
+                <li><a href="#timetable-sector">Розклад</a></li>
+                <li><a href="#contact-sector">Контакти</a></li>
+                <li><a href="#feedback-sector">Зворотній зв'язок</a></li>
+            </ul>
         </nav>
     </header>
     <main>
         <section id="home-sector">
-            <img src="img/homepage-preview.jpg" alt="Homepage preview" width="650">
+            <img src="img/homepage-preview.jpg" alt="Прев'ю домашньої сторінки">
             <h1>Ласкаво просимо на сайт гільдії Reversal!</h1>
             <p>
                 Гільдія була створена у січні 2019 року на основі двох гільдій 
@@ -41,55 +44,49 @@
         <section id="news-sector">
             <h2>Новини</h2>
             <div>
-                <img src="img/archeage-loreia.jpg" alt="Loreia ArcheAge" width="250">
-                <article>
-                    <h3>Трансфер на сервер Лорея</h3>
-                    <label>12 Feb 2019</label>
-                    <p>
-                        Сьогодні гільдія ReversaL повним складом трансфернулась на
-                        сервер Лорея. В планах активна гра у складі фракції NIPs.
-                    </p>
-                </article>
+                <h3>Трансфер на сервер Лорея</h3>
+                <img src="img/archeage-loreia.jpg" alt="Лорея ArcheAge">
+                <p>
+                    Сьогодні гільдія ReversaL повним складом трансфернулась на
+                    сервер Лорея. В планах активна гра у складі фракції NIPs.
+                </p>
+                <label>12 Feb 2019</label>
             </div>
             <br>
             <div>
-                <img src="img/archeage-guild.jpg" alt="ArcheAge guild war" width="250">
-                <article>
-                    <h3>Проводиться набір у гільдію</h3>
-                    <label>23 Jan 2019</label>
-                    <p>
-                        Шукаємо дд від 9к гс, тактиків, хілів і бардів від 8к. 
-                        Від вас вимагається бажання грати у дружньому колективі 
-                        та повна самовіддача в рейдах.
-                    </p>
-                </article>
+                <h3>Проводиться набір у гільдію</h3>
+                <img src="img/archeage-guild.jpg" alt="ArcheAge війна гільдій">
+                <p>
+                    Шукаємо дд від 9к гс, тактиків, хілів і бардів від 8к. 
+                    Від вас вимагається бажання грати у дружньому колективі 
+                    та повна самовіддача в рейдах.
+                </p>
+                <label>23 Jan 2019</label>
             </div>
             <br>
             <div>
-                <img src="img/archeage-castle.jpg" alt="ArcheAge castle" width="250">
-                <article>
-                    <h3>Вступ у фракцію Narnia</h3>
-                    <label>14 Jan 2019</label>
-                    <p>
-                        Cьогодні гільдії ReversaL West та ReversaL East вступили
-                        у фракцію Narnia і сформували єдиний таг ReversaL!
-                    </p>
-                </article>
+                <h3>Вступ у фракцію Narnia</h3>
+                <img src="img/archeage-castle.jpg" alt="ArcheAge замок">
+                <p>
+                    Cьогодні гільдії ReversaL West та ReversaL East вступили
+                    у фракцію Narnia і сформували єдиний таг ReversaL!
+                </p>
+                <label>14 Jan 2019</label>
             </div>
         </section>
         <hr>
         <section id="timetable-sector">
             <h2>Розклад</h2>
-            <table border="1">
+            <table>
                 <tr>
                     <th>РБ</th>
-                    <th>Понеділок</th>
-                    <th>Вівторок</th>
-                    <th>Середа</th>
-                    <th>Четвер</th>
-                    <th>П'ятниця</th>
-                    <th>Субота</th>
-                    <th>Неділя</th>
+                    <th>Пн</th>
+                    <th>Вт</th>
+                    <th>Ср</th>
+                    <th>Чт</th>
+                    <th>Пт</th>
+                    <th>Сб</th>
+                    <th>Нд</th>
                 </tr>
                 <tr>
                     <th>Левіафан</th>
@@ -136,20 +133,22 @@
         <hr>
         <section id="contact-sector">
             <h2>Контакти</h2>
-            <figure>
-                <img src="img/vk-logo.png" alt="vk social network logo" width="100">
-                <figcaption>
-                    <a href="https://vk.com/guildreversal">Група ВК</a>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="img/ts-logo.png" alt="team speak 3 logo" width="100">
-                <figcaption>reversal.mskts.ru</figcaption>
-            </figure>
-            <figure>
-                <img src="img/telegram-logo.png" alt="telegram logo" width="100">
-                <figcaption><a href="https://t.me/haisse">Телеграм</a></figcaption>
-            </figure>
+            <div>
+                <figure>
+                    <img src="img/vk-logo.png" alt="Логотип соціальної мережі vk">
+                    <figcaption>
+                        <a href="https://vk.com/guildreversal">Група ВК</a>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="img/ts-logo.png" alt="Логотип team speak 3">
+                    <figcaption>reversal.mskts.ru</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/telegram-logo.png" alt="Логотип Телеграму">
+                    <figcaption><a href="https://t.me/haisse">Телеграм</a></figcaption>
+                </figure>
+            </div>
         </section>
         <hr>
         <section id="feedback-sector">
@@ -158,19 +157,13 @@
                 <label>
                     <input type="text" name="user-name" placeholder="Ім'я" required/>
                 </label>
-                <br />
-                <br>
                 <label>
                     <input type="email" name="user-email" placeholder="Елекронна адреса" required/>
                 </label>
-                <br />
-                <br>
                 <label>
                     <textarea cols="40" rows="5" name="user-comment" placeholder="Повідомлення"></textarea>
                 </label>
-                <br />
-                <br>
-                <input type="submit" value="Send" /> <br />
+                <input type="submit" value="Send" class="btn" />
              </form>
         </section>
         <hr>
