@@ -63,6 +63,10 @@ header nav .menu a:hover {
     text-decoration: underline;
 }
 
+header nav .menu li:hover {
+    background-color: #E8E3E3;
+}
+
 #home-sector img {
     width: 90%;
     margin: auto;
@@ -122,24 +126,24 @@ header nav .menu a:hover {
 }
 
 #timetable-sector > ul {
-    display : none;
+    display: none;
 }
 
 @media (min-width: 600px) {
-    
+
     #timetable-sector table td {
         padding: 10px;
     }
 }
 
 @media (max-width: 450px) {
-    
+
     #timetable-sector table {
         display: none;
     }
-    
-    #timetable-sector > ul{
-        display : block;
+
+    #timetable-sector > ul {
+        display: block;
     }
 }
 
@@ -157,6 +161,7 @@ header nav .menu a:hover {
 #contact-sector div img {
     width: 100px;
     margin: auto;
+    padding-bottom: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -191,7 +196,7 @@ header nav .menu a:hover {
     height: 150px;
 }
 
-.btn {
+.btn, .load {
     cursor: pointer;
     margin: 10px;
     border-radius: 5px;
@@ -214,47 +219,53 @@ footer {
     align-items: center;
 }
 
-@media (min-width: 450px) {
-    
+@media (min-width: 500px) {
+
     header .header-logo {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
     }
-    
+
     header .menu {
         display: grid;
+        height: 40px;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: 1fr;
     }
-    
+
+    #news-sector div:hover {
+        background-color: #E8E3E3;
+    }
+
     #news-sector div {
         grid-template-columns: 1fr 2fr;
         grid-template-rows: 1fr 3fr 1fr;
     }
-    
+
     #news-sector img {
         max-width: 300px;
         margin: 0px;
+        padding-left: 10px;
         grid-area: 1 / 1 / 4 / 2;
         display: flex;
         align-self: flex-start;
     }
-    
+
     #news-sector p {
         margin-left: 20px;
     }
-    
+
     #news-sector label {
         margin-left: 20px;
     }
-    
+
     #contact-sector div {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr;
     }
-    
+
     #feedback-sector input {
         width: 250px;
     }
