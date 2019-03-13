@@ -11,6 +11,21 @@ body {
 
 h1, h2, h3 {
     text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 10px 0px;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+h3 {
+    font-size: 16px;
 }
 
 header .header-logo {
@@ -28,6 +43,8 @@ header .header-logo div {
 header .header-logo p {
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin: 0px;
 }
 
 header .archeage-logo {
@@ -65,14 +82,6 @@ header nav .menu a:hover {
 
 header nav .menu li:hover {
     background-color: #E8E3E3;
-}
-
-#home-sector img {
-    width: 90%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 #home-sector p {
@@ -125,7 +134,7 @@ header nav .menu li:hover {
     text-align: center;
 }
 
-#timetable-sector > ul {
+#timetable-sector>ul {
     display: none;
 }
 
@@ -142,7 +151,7 @@ header nav .menu li:hover {
         display: none;
     }
 
-    #timetable-sector > ul {
+    #timetable-sector>ul {
         display: block;
     }
 }
@@ -196,7 +205,8 @@ header nav .menu li:hover {
     height: 150px;
 }
 
-.btn, .load {
+.btn,
+.load {
     cursor: pointer;
     margin: 10px;
     border-radius: 5px;
@@ -232,6 +242,20 @@ footer {
         height: 40px;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: 1fr;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 22px;
+        text-align: center;
     }
 
     #news-sector div:hover {

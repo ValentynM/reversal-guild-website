@@ -1,7 +1,7 @@
 $('.menu a').click(function() {
     $('html, body').animate({
         scrollTop: $($(this).attr('href')).offset().top
-    }, 1500);
+    }, 700);
 });
 
 const name = document.querySelector('#feedback-sector input[type=text]');
