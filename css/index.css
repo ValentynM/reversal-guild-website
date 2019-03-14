@@ -132,7 +132,8 @@ header nav .menu li:hover {
     align-items: center;
 }
 
-#timetable-sector table td {
+#timetable-sector table td,
+#timetable-sector table th {
     text-align: center;
 }
 
@@ -176,6 +177,10 @@ header nav .menu li:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#contact-sector div img:hover {
+    transform: rotate3d(1, 2, 3, 30deg)
 }
 
 #contact-sector div figcaption {
