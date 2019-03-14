@@ -220,19 +220,28 @@
         <hr>
         <section id="feedback-sector">
             <h2>Зворотній зв'язок</h2>
-            <form method="POST" action="https://formspree.io/valentyn17@gmail.com">
-                <label>
-                    <input type="text" name="user-name" placeholder="Ім'я" required/>
-                </label>
-                <label>
-                    <input type="email" name="user-email" placeholder="Елекронна адреса" required/>
-                </label>
-                <label>
-                    <textarea cols="40" rows="5" name="user-comment" placeholder="Повідомлення"></textarea>
-                </label>
-                <input type="submit" value="Send" class="btn" />
-                <input class="load" type="button" value="Load personal data">
-            </form>
+
+            <div class="container">
+                <form method="POST" action="https://formspree.io/valentyn17@gmail.com">
+                    <div class="form-group">
+                        <label>Ім'я
+                            <input type="text" class="form-control" placeholder="Введіть ім'я" required>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>Електронна адреса
+                            <input type="email" class="form-control" placeholder="Введіть елекронну адресу" required>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>Повідомлення
+                            <textarea class="form-control" rows="5" placeholder="Введіть повідомлення"></textarea>
+                        </label>
+                    </div>
+                    <button type="submit" id="send-data" class="btn btn-outline-dark">Надіслати повідомлення!</button>
+                    <button type="button" id="load-data" class="btn btn-outline-dark">Завантажити персональні дані</button>
+                </form>
+            </div>
         </section>
         <hr>
     </main>

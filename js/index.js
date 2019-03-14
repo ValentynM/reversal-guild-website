@@ -8,10 +8,11 @@ const name = document.querySelector('#feedback-sector input[type=text]');
 const email = document.querySelector('#feedback-sector input[type=email]');
 const text = document.querySelector('#feedback-sector textarea');
 
-document.querySelector('input[type=submit]').addEventListener('click', savePersonalData);
-document.querySelector('.load').addEventListener('click', loadPersonalData);
+document.querySelector('#feedback-sector button[type=submit]').addEventListener('click', savePersonalData);
+document.querySelector('#feedback-sector button[type=button]').addEventListener('click', loadPersonalData);
 
 function savePersonalData(event) {
+    console.log('save');
     event.preventDefault();
     localStorage['name'] = name.value;
     localStorage['email'] = email.value;
@@ -22,6 +23,7 @@ function savePersonalData(event) {
 }
 
 function loadPersonalData() {
+    console.log('load');
     name.value = localStorage['name'] || '';
     email.value = localStorage['email'] || '';
 }
