@@ -97,10 +97,16 @@ header nav .menu li:hover {
 }
 
 #home-sector li {
+    height: 50px;
     margin: 10px 0px;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(../img/red-painted-line.jpg);
+    background-repeat: no-repeat;
+    background-size: 250px 50px;
+    background-position: center;
 }
 
 #news-sector div {
@@ -231,6 +237,17 @@ header nav .menu li:hover {
     #feedback-sector textarea {
         width: 500px;
         height: 200px;
+    }
+}
+
+@media (min-width: 720px) {
+    #home-sector ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #home-sector ul li {
+        width: 250px;
     }
 }
 
